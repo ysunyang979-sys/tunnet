@@ -5,20 +5,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "日本 TYO 01",
-        "日本 TYO 02",
-        "日本 TYO 03",
-        "日本 TYO 04",
-        "日本 TYO 05",
-        "日本 TYO 06",
-        "新加坡 SIN 01",
-        "新加坡 SIN 02",
-        "美国 LAX 01",
-        "美国 LAX 02",
-        "美国 SEA 01",
-        "美国 SEA 02",
-        "印度尼西亚 CGK",
-        "德国 FRA",
+        "日本 TYO 01 · 极速专线",
+        "日本 TYO 02 · 东京高带",
+        "日本 TYO 03 · 低延迟中转",
+        "日本 TYO 04 · 游戏优化",
+        "日本 TYO 05 · 原生解锁",
+        "日本 TYO 06 · BGP 专线",
+        "新加坡 SIN 01 · 狮城低延迟",
+        "新加坡 SIN 02 · 东南亚互联",
+        "美国 LAX 01 · 洛杉矶直连",
+        "美国 LAX 02 · 硅谷原生",
+        "美国 SEA 01 · 西雅图高防",
+        "美国 SEA 02 · 极速流媒体",
+        "印度尼西亚 CGK · 雅加达",
+        "德国 FRA · 法兰克福",
         "Google商店 ｜ Gemini 专用"
       ]
     },
@@ -26,20 +26,20 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "日本 TYO 01",
-        "日本 TYO 02",
-        "日本 TYO 03",
-        "日本 TYO 04",
-        "日本 TYO 05",
-        "日本 TYO 06",
-        "新加坡 SIN 01",
-        "新加坡 SIN 02",
-        "美国 LAX 01",
-        "美国 LAX 02",
-        "美国 SEA 01",
-        "美国 SEA 02",
-        "印度尼西亚 CGK",
-        "德国 FRA",
+        "日本 TYO 01 · 极速专线",
+        "日本 TYO 02 · 东京高带",
+        "日本 TYO 03 · 低延迟中转",
+        "日本 TYO 04 · 游戏优化",
+        "日本 TYO 05 · 原生解锁",
+        "日本 TYO 06 · BGP 专线",
+        "新加坡 SIN 01 · 狮城低延迟",
+        "新加坡 SIN 02 · 东南亚互联",
+        "美国 LAX 01 · 洛杉矶直连",
+        "美国 LAX 02 · 硅谷原生",
+        "美国 SEA 01 · 西雅图高防",
+        "美国 SEA 02 · 极速流媒体",
+        "印度尼西亚 CGK · 雅加达",
+        "德国 FRA · 法兰克福",
         "Google商店 ｜ Gemini 专用"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -47,14 +47,14 @@
     },
     {
       "type": "vless",
-      "tag": "日本 TYO 01",
-      "server": "tyo-01.edge.nexttun.net",
+      "tag": "日本 TYO 01 · 极速专线",
+      "server": "101.73.99.104",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tyo-01.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -63,14 +63,14 @@
     },
     {
       "type": "vless",
-      "tag": "日本 TYO 02",
-      "server": "tyo-02.edge.nexttun.net",
+      "tag": "日本 TYO 02 · 东京高带",
+      "server": "103.86.47.40",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tyo-02.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -79,14 +79,14 @@
     },
     {
       "type": "vless",
-      "tag": "日本 TYO 03",
-      "server": "tyo-03.edge.nexttun.net",
+      "tag": "日本 TYO 03 · 低延迟中转",
+      "server": "103.127.124.165",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tyo-03.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -95,14 +95,14 @@
     },
     {
       "type": "vless",
-      "tag": "日本 TYO 04",
-      "server": "tyo-04.edge.nexttun.net",
+      "tag": "日本 TYO 04 · 游戏优化",
+      "server": "172.67.152.238",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tyo-04.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -111,14 +111,14 @@
     },
     {
       "type": "vless",
-      "tag": "日本 TYO 05",
-      "server": "tyo-05.edge.nexttun.net",
+      "tag": "日本 TYO 05 · 原生解锁",
+      "server": "104.18.10.118",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tyo-05.edge.nexttun.net",
+        "server_name": "cloudflare-ech.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -127,14 +127,14 @@
     },
     {
       "type": "vless",
-      "tag": "日本 TYO 06",
-      "server": "tyo-06.edge.nexttun.net",
+      "tag": "日本 TYO 06 · BGP 专线",
+      "server": "101.73.99.104",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tyo-06.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -143,14 +143,14 @@
     },
     {
       "type": "vless",
-      "tag": "新加坡 SIN 01",
-      "server": "sin-01.edge.nexttun.net",
+      "tag": "新加坡 SIN 01 · 狮城低延迟",
+      "server": "103.86.47.40",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sin-01.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -159,14 +159,14 @@
     },
     {
       "type": "vless",
-      "tag": "新加坡 SIN 02",
-      "server": "sin-02.edge.nexttun.net",
+      "tag": "新加坡 SIN 02 · 东南亚互联",
+      "server": "103.127.124.165",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sin-02.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -175,14 +175,14 @@
     },
     {
       "type": "vless",
-      "tag": "美国 LAX 01",
-      "server": "lax-01.edge.nexttun.net",
+      "tag": "美国 LAX 01 · 洛杉矶直连",
+      "server": "172.67.152.238",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lax-01.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -191,14 +191,14 @@
     },
     {
       "type": "vless",
-      "tag": "美国 LAX 02",
-      "server": "lax-02.edge.nexttun.net",
+      "tag": "美国 LAX 02 · 硅谷原生",
+      "server": "104.18.10.118",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lax-02.edge.nexttun.net",
+        "server_name": "cloudflare-ech.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -207,14 +207,14 @@
     },
     {
       "type": "vless",
-      "tag": "美国 SEA 01",
-      "server": "sea-01.edge.nexttun.net",
+      "tag": "美国 SEA 01 · 西雅图高防",
+      "server": "101.73.99.104",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sea-01.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -223,14 +223,14 @@
     },
     {
       "type": "vless",
-      "tag": "美国 SEA 02",
-      "server": "sea-02.edge.nexttun.net",
+      "tag": "美国 SEA 02 · 极速流媒体",
+      "server": "103.86.47.40",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sea-02.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -239,14 +239,14 @@
     },
     {
       "type": "vless",
-      "tag": "印度尼西亚 CGK",
-      "server": "cgk.edge.nexttun.net",
+      "tag": "印度尼西亚 CGK · 雅加达",
+      "server": "103.127.124.165",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cgk.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -255,14 +255,14 @@
     },
     {
       "type": "vless",
-      "tag": "德国 FRA",
-      "server": "fra.edge.nexttun.net",
+      "tag": "德国 FRA · 法兰克福",
+      "server": "172.67.152.238",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fra.edge.nexttun.net",
+        "server_name": "client-api.nexttun.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -272,13 +272,13 @@
     {
       "type": "vless",
       "tag": "Google商店 ｜ Gemini 专用",
-      "server": "google-gemini.edge.nexttun.net",
+      "server": "104.18.10.118",
       "server_port": 443,
       "uuid": "6c720888-2567-894d-98b5-881d0f5ff452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "google-gemini.edge.nexttun.net",
+        "server_name": "cloudflare-ech.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"

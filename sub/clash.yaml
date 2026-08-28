@@ -1,6 +1,6 @@
 # TunNet Auto-Generated Clash Configuration
-# Updated at: 2026-08-28 13:29:42 (UTC+8)
-# Total Nodes: 15
+# Updated at: 2026-08-28 13:41:17 (UTC+8)
+# Total Active Nodes: 15
 
 port: 7890
 socks-port: 7891
@@ -8,168 +8,168 @@ allow-lan: true
 mode: rule
 
 proxies:
-  - name: "日本 TYO 01"
+  - name: "日本 TYO 01 · 极速专线"
     type: vless
-    server: tyo-01.edge.nexttun.net
+    server: 101.73.99.104
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: tyo-01.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "日本 TYO 02"
+  - name: "日本 TYO 02 · 东京高带"
     type: vless
-    server: tyo-02.edge.nexttun.net
+    server: 103.86.47.40
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: tyo-02.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "日本 TYO 03"
+  - name: "日本 TYO 03 · 低延迟中转"
     type: vless
-    server: tyo-03.edge.nexttun.net
+    server: 103.127.124.165
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: tyo-03.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "日本 TYO 04"
+  - name: "日本 TYO 04 · 游戏优化"
     type: vless
-    server: tyo-04.edge.nexttun.net
+    server: 172.67.152.238
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: tyo-04.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "日本 TYO 05"
+  - name: "日本 TYO 05 · 原生解锁"
     type: vless
-    server: tyo-05.edge.nexttun.net
+    server: 104.18.10.118
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: tyo-05.edge.nexttun.net
+    servername: cloudflare-ech.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "日本 TYO 06"
+  - name: "日本 TYO 06 · BGP 专线"
     type: vless
-    server: tyo-06.edge.nexttun.net
+    server: 101.73.99.104
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: tyo-06.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "新加坡 SIN 01"
+  - name: "新加坡 SIN 01 · 狮城低延迟"
     type: vless
-    server: sin-01.edge.nexttun.net
+    server: 103.86.47.40
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: sin-01.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "新加坡 SIN 02"
+  - name: "新加坡 SIN 02 · 东南亚互联"
     type: vless
-    server: sin-02.edge.nexttun.net
+    server: 103.127.124.165
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: sin-02.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "美国 LAX 01"
+  - name: "美国 LAX 01 · 洛杉矶直连"
     type: vless
-    server: lax-01.edge.nexttun.net
+    server: 172.67.152.238
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: lax-01.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "美国 LAX 02"
+  - name: "美国 LAX 02 · 硅谷原生"
     type: vless
-    server: lax-02.edge.nexttun.net
+    server: 104.18.10.118
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: lax-02.edge.nexttun.net
+    servername: cloudflare-ech.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "美国 SEA 01"
+  - name: "美国 SEA 01 · 西雅图高防"
     type: vless
-    server: sea-01.edge.nexttun.net
+    server: 101.73.99.104
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: sea-01.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "美国 SEA 02"
+  - name: "美国 SEA 02 · 极速流媒体"
     type: vless
-    server: sea-02.edge.nexttun.net
+    server: 103.86.47.40
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: sea-02.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "印度尼西亚 CGK"
+  - name: "印度尼西亚 CGK · 雅加达"
     type: vless
-    server: cgk.edge.nexttun.net
+    server: 103.127.124.165
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: cgk.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-  - name: "德国 FRA"
+  - name: "德国 FRA · 法兰克福"
     type: vless
-    server: fra.edge.nexttun.net
+    server: 172.67.152.238
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: fra.edge.nexttun.net
+    servername: client-api.nexttun.net
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
   - name: "Google商店 ｜ Gemini 专用"
     type: vless
-    server: google-gemini.edge.nexttun.net
+    server: 104.18.10.118
     port: 443
     uuid: 6c720888-2567-894d-98b5-881d0f5ff452
     network: tcp
     tls: true
-    servername: google-gemini.edge.nexttun.net
+    servername: cloudflare-ech.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
@@ -179,40 +179,40 @@ proxy-groups:
     proxies:
       - "♻️ 自动选择"
       - DIRECT
-      - "日本 TYO 01"
-      - "日本 TYO 02"
-      - "日本 TYO 03"
-      - "日本 TYO 04"
-      - "日本 TYO 05"
-      - "日本 TYO 06"
-      - "新加坡 SIN 01"
-      - "新加坡 SIN 02"
-      - "美国 LAX 01"
-      - "美国 LAX 02"
-      - "美国 SEA 01"
-      - "美国 SEA 02"
-      - "印度尼西亚 CGK"
-      - "德国 FRA"
+      - "日本 TYO 01 · 极速专线"
+      - "日本 TYO 02 · 东京高带"
+      - "日本 TYO 03 · 低延迟中转"
+      - "日本 TYO 04 · 游戏优化"
+      - "日本 TYO 05 · 原生解锁"
+      - "日本 TYO 06 · BGP 专线"
+      - "新加坡 SIN 01 · 狮城低延迟"
+      - "新加坡 SIN 02 · 东南亚互联"
+      - "美国 LAX 01 · 洛杉矶直连"
+      - "美国 LAX 02 · 硅谷原生"
+      - "美国 SEA 01 · 西雅图高防"
+      - "美国 SEA 02 · 极速流媒体"
+      - "印度尼西亚 CGK · 雅加达"
+      - "德国 FRA · 法兰克福"
       - "Google商店 ｜ Gemini 专用"
   - name: "♻️ 自动选择"
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "日本 TYO 01"
-      - "日本 TYO 02"
-      - "日本 TYO 03"
-      - "日本 TYO 04"
-      - "日本 TYO 05"
-      - "日本 TYO 06"
-      - "新加坡 SIN 01"
-      - "新加坡 SIN 02"
-      - "美国 LAX 01"
-      - "美国 LAX 02"
-      - "美国 SEA 01"
-      - "美国 SEA 02"
-      - "印度尼西亚 CGK"
-      - "德国 FRA"
+      - "日本 TYO 01 · 极速专线"
+      - "日本 TYO 02 · 东京高带"
+      - "日本 TYO 03 · 低延迟中转"
+      - "日本 TYO 04 · 游戏优化"
+      - "日本 TYO 05 · 原生解锁"
+      - "日本 TYO 06 · BGP 专线"
+      - "新加坡 SIN 01 · 狮城低延迟"
+      - "新加坡 SIN 02 · 东南亚互联"
+      - "美国 LAX 01 · 洛杉矶直连"
+      - "美国 LAX 02 · 硅谷原生"
+      - "美国 SEA 01 · 西雅图高防"
+      - "美国 SEA 02 · 极速流媒体"
+      - "印度尼西亚 CGK · 雅加达"
+      - "德国 FRA · 法兰克福"
       - "Google商店 ｜ Gemini 专用"
 
 rules:

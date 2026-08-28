@@ -1,15 +1,15 @@
-vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-01.edge.nexttun.net:443?security=tls&sni=tyo-01.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 01
-vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-02.edge.nexttun.net:443?security=tls&sni=tyo-02.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 02
-vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-03.edge.nexttun.net:443?security=tls&sni=tyo-03.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 03
-vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-04.edge.nexttun.net:443?security=tls&sni=tyo-04.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 04
-vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-05.edge.nexttun.net:443?security=tls&sni=tyo-05.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 05
-vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-06.edge.nexttun.net:443?security=tls&sni=tyo-06.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 06
-vless://6c720888-2567-894d-98b5-881d0f5ff452@sin-01.edge.nexttun.net:443?security=tls&sni=sin-01.edge.nexttun.net&flow=xtls-rprx-vision#新加坡 SIN 01
-vless://6c720888-2567-894d-98b5-881d0f5ff452@sin-02.edge.nexttun.net:443?security=tls&sni=sin-02.edge.nexttun.net&flow=xtls-rprx-vision#新加坡 SIN 02
-vless://6c720888-2567-894d-98b5-881d0f5ff452@lax-01.edge.nexttun.net:443?security=tls&sni=lax-01.edge.nexttun.net&flow=xtls-rprx-vision#美国 LAX 01
-vless://6c720888-2567-894d-98b5-881d0f5ff452@lax-02.edge.nexttun.net:443?security=tls&sni=lax-02.edge.nexttun.net&flow=xtls-rprx-vision#美国 LAX 02
-vless://6c720888-2567-894d-98b5-881d0f5ff452@sea-01.edge.nexttun.net:443?security=tls&sni=sea-01.edge.nexttun.net&flow=xtls-rprx-vision#美国 SEA 01
-vless://6c720888-2567-894d-98b5-881d0f5ff452@sea-02.edge.nexttun.net:443?security=tls&sni=sea-02.edge.nexttun.net&flow=xtls-rprx-vision#美国 SEA 02
-vless://6c720888-2567-894d-98b5-881d0f5ff452@cgk.edge.nexttun.net:443?security=tls&sni=cgk.edge.nexttun.net&flow=xtls-rprx-vision#印度尼西亚 CGK
-vless://6c720888-2567-894d-98b5-881d0f5ff452@fra.edge.nexttun.net:443?security=tls&sni=fra.edge.nexttun.net&flow=xtls-rprx-vision#德国 FRA
-vless://6c720888-2567-894d-98b5-881d0f5ff452@google-gemini.edge.nexttun.net:443?security=tls&sni=google-gemini.edge.nexttun.net&flow=xtls-rprx-vision#Google商店 ｜ Gemini 专用
+vless://6c720888-2567-894d-98b5-881d0f5ff452@101.73.99.104:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#日本 TYO 01 · 极速专线
+vless://6c720888-2567-894d-98b5-881d0f5ff452@103.86.47.40:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#日本 TYO 02 · 东京高带
+vless://6c720888-2567-894d-98b5-881d0f5ff452@103.127.124.165:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#日本 TYO 03 · 低延迟中转
+vless://6c720888-2567-894d-98b5-881d0f5ff452@172.67.152.238:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#日本 TYO 04 · 游戏优化
+vless://6c720888-2567-894d-98b5-881d0f5ff452@104.18.10.118:443?security=tls&sni=cloudflare-ech.com&type=tcp&flow=xtls-rprx-vision#日本 TYO 05 · 原生解锁
+vless://6c720888-2567-894d-98b5-881d0f5ff452@101.73.99.104:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#日本 TYO 06 · BGP 专线
+vless://6c720888-2567-894d-98b5-881d0f5ff452@103.86.47.40:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#新加坡 SIN 01 · 狮城低延迟
+vless://6c720888-2567-894d-98b5-881d0f5ff452@103.127.124.165:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#新加坡 SIN 02 · 东南亚互联
+vless://6c720888-2567-894d-98b5-881d0f5ff452@172.67.152.238:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#美国 LAX 01 · 洛杉矶直连
+vless://6c720888-2567-894d-98b5-881d0f5ff452@104.18.10.118:443?security=tls&sni=cloudflare-ech.com&type=tcp&flow=xtls-rprx-vision#美国 LAX 02 · 硅谷原生
+vless://6c720888-2567-894d-98b5-881d0f5ff452@101.73.99.104:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#美国 SEA 01 · 西雅图高防
+vless://6c720888-2567-894d-98b5-881d0f5ff452@103.86.47.40:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#美国 SEA 02 · 极速流媒体
+vless://6c720888-2567-894d-98b5-881d0f5ff452@103.127.124.165:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#印度尼西亚 CGK · 雅加达
+vless://6c720888-2567-894d-98b5-881d0f5ff452@172.67.152.238:443?security=tls&sni=client-api.nexttun.net&type=tcp&flow=xtls-rprx-vision#德国 FRA · 法兰克福
+vless://6c720888-2567-894d-98b5-881d0f5ff452@104.18.10.118:443?security=tls&sni=cloudflare-ech.com&type=tcp&flow=xtls-rprx-vision#Google商店 ｜ Gemini 专用
