@@ -668,7 +668,7 @@
             <div class="status-icon" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">⚡</div>
             <div class="status-info">
                 <h4>可用节点总数</h4>
-                <div class="value" id="node-count">6 个在线节点</div>
+                <div class="value" id="node-count">15 个在线节点</div>
             </div>
         </div>
         <div class="status-card">
@@ -757,14 +757,88 @@
 
     <!-- Node Cards Grid -->
     <div class="nodes-grid" id="nodes-container">
-        <!-- Node 1 -->
-        <div class="node-card" data-region="HK">
+
+        <div class="node-card" data-region="JP">
             <div>
                 <div class="node-header">
                     <div class="node-title-group">
-                        <span class="node-flag">🇭🇰</span>
+                        <span class="node-flag">🇯🇵</span>
                         <div>
-                            <div class="node-name">香港 01 · 极速专线 BGP</div>
+                            <div class="node-name">日本 TYO 01</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-medium">🟡 120 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">tyo-01.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #fbbf24;">65%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-01.edge.nexttun.net:443?security=tls&sni=tyo-01.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 01')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('日本 TYO 01')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="JP">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇯🇵</span>
+                        <div>
+                            <div class="node-name">日本 TYO 02</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-medium">🟡 120 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">tyo-02.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #fbbf24;">51%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-02.edge.nexttun.net:443?security=tls&sni=tyo-02.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 02')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('日本 TYO 02')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="JP">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇯🇵</span>
+                        <div>
+                            <div class="node-name">日本 TYO 03</div>
                             <span class="node-protocol">VLESS + Vision</span>
                         </div>
                     </div>
@@ -772,8 +846,8 @@
                 </div>
                 <div class="node-details">
                     <div class="detail-item">
-                        <span class="detail-label">出口域名</span>
-                        <span class="detail-val">hk01.edge.nexttun.net</span>
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">tyo-03.edge.nexttun.net</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">加密通道</span>
@@ -781,7 +855,7 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">当前负载</span>
-                        <span class="detail-val" style="color: #34d399;">18% (优秀)</span>
+                        <span class="detail-val" style="color: #34d399;">42%</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">协议端口</span>
@@ -790,66 +864,27 @@
                 </div>
             </div>
             <div class="node-actions">
-                <button class="btn btn-secondary" onclick="copyNodeLink('vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@hk01.edge.nexttun.net:443?security=tls&flow=xtls-rprx-vision&sni=hk01.edge.nexttun.net#香港 01 · 极速专线 BGP')">复制链接</button>
-                <button class="btn btn-secondary" onclick="openQRCodeModal('香港 01 · 极速专线 BGP')">二维码</button>
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-03.edge.nexttun.net:443?security=tls&sni=tyo-03.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 03')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('日本 TYO 03')">二维码</button>
             </div>
         </div>
 
-        <!-- Node 2 -->
-        <div class="node-card" data-region="HK">
-            <div>
-                <div class="node-header">
-                    <div class="node-title-group">
-                        <span class="node-flag">🇭🇰</span>
-                        <div>
-                            <div class="node-name">香港 02 · Anycast CDN</div>
-                            <span class="node-protocol">VLESS + XHTTP</span>
-                        </div>
-                    </div>
-                    <span class="latency-badge latency-fast">🟢 34 ms</span>
-                </div>
-                <div class="node-details">
-                    <div class="detail-item">
-                        <span class="detail-label">出口域名</span>
-                        <span class="detail-val">hk02.edge.nexttun.net</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">加密通道</span>
-                        <span class="detail-val">HTTP/3 ECH</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">当前负载</span>
-                        <span class="detail-val" style="color: #34d399;">24% (优秀)</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">协议端口</span>
-                        <span class="detail-val">8443 / XHTTP</span>
-                    </div>
-                </div>
-            </div>
-            <div class="node-actions">
-                <button class="btn btn-secondary" onclick="copyNodeLink('vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@hk02.edge.nexttun.net:8443?security=tls&type=xhttp&sni=hk02.edge.nexttun.net#香港 02 · Anycast CDN')">复制链接</button>
-                <button class="btn btn-secondary" onclick="openQRCodeModal('香港 02 · Anycast CDN')">二维码</button>
-            </div>
-        </div>
-
-        <!-- Node 3 -->
         <div class="node-card" data-region="JP">
             <div>
                 <div class="node-header">
                     <div class="node-title-group">
                         <span class="node-flag">🇯🇵</span>
                         <div>
-                            <div class="node-name">日本 01 · 东京高带宽</div>
+                            <div class="node-name">日本 TYO 04</div>
                             <span class="node-protocol">VLESS + Vision</span>
                         </div>
                     </div>
-                    <span class="latency-badge latency-fast">🟢 49 ms</span>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
                 </div>
                 <div class="node-details">
                     <div class="detail-item">
-                        <span class="detail-label">出口域名</span>
-                        <span class="detail-val">tyo01.edge.nexttun.net</span>
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">tyo-04.edge.nexttun.net</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">加密通道</span>
@@ -857,7 +892,7 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">当前负载</span>
-                        <span class="detail-val" style="color: #34d399;">31% (优秀)</span>
+                        <span class="detail-val" style="color: #34d399;">39%</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">协议端口</span>
@@ -866,28 +901,101 @@
                 </div>
             </div>
             <div class="node-actions">
-                <button class="btn btn-secondary" onclick="copyNodeLink('vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@tyo01.edge.nexttun.net:443?security=tls&flow=xtls-rprx-vision&sni=tyo01.edge.nexttun.net#日本 01 · 东京高带宽')">复制链接</button>
-                <button class="btn btn-secondary" onclick="openQRCodeModal('日本 01 · 东京高带宽')">二维码</button>
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-04.edge.nexttun.net:443?security=tls&sni=tyo-04.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 04')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('日本 TYO 04')">二维码</button>
             </div>
         </div>
 
-        <!-- Node 4 -->
+        <div class="node-card" data-region="JP">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇯🇵</span>
+                        <div>
+                            <div class="node-name">日本 TYO 05</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">tyo-05.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">32%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-05.edge.nexttun.net:443?security=tls&sni=tyo-05.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 05')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('日本 TYO 05')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="JP">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇯🇵</span>
+                        <div>
+                            <div class="node-name">日本 TYO 06</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">tyo-06.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">38%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@tyo-06.edge.nexttun.net:443?security=tls&sni=tyo-06.edge.nexttun.net&flow=xtls-rprx-vision#日本 TYO 06')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('日本 TYO 06')">二维码</button>
+            </div>
+        </div>
+
         <div class="node-card" data-region="SG">
             <div>
                 <div class="node-header">
                     <div class="node-title-group">
                         <span class="node-flag">🇸🇬</span>
                         <div>
-                            <div class="node-name">新加坡 01 · 狮城低延迟</div>
+                            <div class="node-name">新加坡 SIN 01</div>
                             <span class="node-protocol">VLESS + Vision</span>
                         </div>
                     </div>
-                    <span class="latency-badge latency-fast">🟢 58 ms</span>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
                 </div>
                 <div class="node-details">
                     <div class="detail-item">
-                        <span class="detail-label">出口域名</span>
-                        <span class="detail-val">sin01.edge.nexttun.net</span>
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">sin-01.edge.nexttun.net</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">加密通道</span>
@@ -895,7 +1003,7 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">当前负载</span>
-                        <span class="detail-val" style="color: #34d399;">12% (空闲)</span>
+                        <span class="detail-val" style="color: #34d399;">29%</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">协议端口</span>
@@ -904,66 +1012,64 @@
                 </div>
             </div>
             <div class="node-actions">
-                <button class="btn btn-secondary" onclick="copyNodeLink('vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@sin01.edge.nexttun.net:443?security=tls&flow=xtls-rprx-vision&sni=sin01.edge.nexttun.net#新加坡 01 · 狮城低延迟')">复制链接</button>
-                <button class="btn btn-secondary" onclick="openQRCodeModal('新加坡 01 · 狮城低延迟')">二维码</button>
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@sin-01.edge.nexttun.net:443?security=tls&sni=sin-01.edge.nexttun.net&flow=xtls-rprx-vision#新加坡 SIN 01')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('新加坡 SIN 01')">二维码</button>
             </div>
         </div>
 
-        <!-- Node 5 -->
+        <div class="node-card" data-region="SG">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇸🇬</span>
+                        <div>
+                            <div class="node-name">新加坡 SIN 02</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">sin-02.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">31%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@sin-02.edge.nexttun.net:443?security=tls&sni=sin-02.edge.nexttun.net&flow=xtls-rprx-vision#新加坡 SIN 02')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('新加坡 SIN 02')">二维码</button>
+            </div>
+        </div>
+
         <div class="node-card" data-region="US">
             <div>
                 <div class="node-header">
                     <div class="node-title-group">
                         <span class="node-flag">🇺🇸</span>
                         <div>
-                            <div class="node-name">美国 01 · 硅谷原生解锁</div>
-                            <span class="node-protocol">VLESS + XHTTP</span>
-                        </div>
-                    </div>
-                    <span class="latency-badge latency-medium">🟡 138 ms</span>
-                </div>
-                <div class="node-details">
-                    <div class="detail-item">
-                        <span class="detail-label">出口域名</span>
-                        <span class="detail-val">sjc01.edge.nexttun.net</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">流媒体支持</span>
-                        <span class="detail-val" style="color: #38bdf8;">4K Netflix / OpenAI</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">当前负载</span>
-                        <span class="detail-val" style="color: #fbbf24;">42% (正常)</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">协议端口</span>
-                        <span class="detail-val">8443 / XHTTP</span>
-                    </div>
-                </div>
-            </div>
-            <div class="node-actions">
-                <button class="btn btn-secondary" onclick="copyNodeLink('vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@sjc01.edge.nexttun.net:8443?security=tls&type=xhttp&sni=sjc01.edge.nexttun.net#美国 01 · 硅谷原生解锁')">复制链接</button>
-                <button class="btn btn-secondary" onclick="openQRCodeModal('美国 01 · 硅谷原生解锁')">二维码</button>
-            </div>
-        </div>
-
-        <!-- Node 6 -->
-        <div class="node-card" data-region="DE">
-            <div>
-                <div class="node-header">
-                    <div class="node-title-group">
-                        <span class="node-flag">🇩🇪</span>
-                        <div>
-                            <div class="node-name">德国 01 · 法兰克福节点</div>
+                            <div class="node-name">美国 LAX 01</div>
                             <span class="node-protocol">VLESS + Vision</span>
                         </div>
                     </div>
-                    <span class="latency-badge latency-medium">🟡 156 ms</span>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
                 </div>
                 <div class="node-details">
                     <div class="detail-item">
-                        <span class="detail-label">出口域名</span>
-                        <span class="detail-val">fra01.edge.nexttun.net</span>
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">lax-01.edge.nexttun.net</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">加密通道</span>
@@ -971,7 +1077,7 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">当前负载</span>
-                        <span class="detail-val" style="color: #34d399;">22% (优秀)</span>
+                        <span class="detail-val" style="color: #34d399;">28%</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">协议端口</span>
@@ -980,8 +1086,230 @@
                 </div>
             </div>
             <div class="node-actions">
-                <button class="btn btn-secondary" onclick="copyNodeLink('vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@fra01.edge.nexttun.net:443?security=tls&flow=xtls-rprx-vision&sni=fra01.edge.nexttun.net#德国 01 · 法兰克福节点')">复制链接</button>
-                <button class="btn btn-secondary" onclick="openQRCodeModal('德国 01 · 法兰克福节点')">二维码</button>
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@lax-01.edge.nexttun.net:443?security=tls&sni=lax-01.edge.nexttun.net&flow=xtls-rprx-vision#美国 LAX 01')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('美国 LAX 01')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="US">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇺🇸</span>
+                        <div>
+                            <div class="node-name">美国 LAX 02</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">lax-02.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">26%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@lax-02.edge.nexttun.net:443?security=tls&sni=lax-02.edge.nexttun.net&flow=xtls-rprx-vision#美国 LAX 02')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('美国 LAX 02')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="US">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇺🇸</span>
+                        <div>
+                            <div class="node-name">美国 SEA 01</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">sea-01.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">45%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@sea-01.edge.nexttun.net:443?security=tls&sni=sea-01.edge.nexttun.net&flow=xtls-rprx-vision#美国 SEA 01')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('美国 SEA 01')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="US">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇺🇸</span>
+                        <div>
+                            <div class="node-name">美国 SEA 02</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">sea-02.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">32%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@sea-02.edge.nexttun.net:443?security=tls&sni=sea-02.edge.nexttun.net&flow=xtls-rprx-vision#美国 SEA 02')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('美国 SEA 02')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="ID">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇮🇩</span>
+                        <div>
+                            <div class="node-name">印度尼西亚 CGK</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">cgk.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">41%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@cgk.edge.nexttun.net:443?security=tls&sni=cgk.edge.nexttun.net&flow=xtls-rprx-vision#印度尼西亚 CGK')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('印度尼西亚 CGK')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="DE">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🇩🇪</span>
+                        <div>
+                            <div class="node-name">德国 FRA</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">fra.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">28%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@fra.edge.nexttun.net:443?security=tls&sni=fra.edge.nexttun.net&flow=xtls-rprx-vision#德国 FRA')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('德国 FRA')">二维码</button>
+            </div>
+        </div>
+
+        <div class="node-card" data-region="US">
+            <div>
+                <div class="node-header">
+                    <div class="node-title-group">
+                        <span class="node-flag">🤖</span>
+                        <div>
+                            <div class="node-name">Google商店 ｜ Gemini 专用</div>
+                            <span class="node-protocol">VLESS + Vision</span>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-fast">🟢 28 ms</span>
+                </div>
+                <div class="node-details">
+                    <div class="detail-item">
+                        <span class="detail-label">出口节点</span>
+                        <span class="detail-val">google-gemini.edge.nexttun.net</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">加密通道</span>
+                        <span class="detail-val">TLS 1.3 / ECH</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">当前负载</span>
+                        <span class="detail-val" style="color: #34d399;">25%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">协议端口</span>
+                        <span class="detail-val">443 / TCP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="node-actions">
+                <button class="btn btn-secondary" onclick="copyNodeLink('vless://6c720888-2567-894d-98b5-881d0f5ff452@google-gemini.edge.nexttun.net:443?security=tls&sni=google-gemini.edge.nexttun.net&flow=xtls-rprx-vision#Google商店 ｜ Gemini 专用')">复制链接</button>
+                <button class="btn btn-secondary" onclick="openQRCodeModal('Google商店 ｜ Gemini 专用')">二维码</button>
             </div>
         </div>
     </div>
