@@ -1,0 +1,91 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 香港 01 · 极速专线 BGP
+  type: vless
+  server: hk01.edge.nexttun.net
+  port: 443
+  uuid: 4c60d9cc-a237-48d9-aaad-83e89c2c3929
+  network: tcp
+  tls: true
+  servername: hk01.edge.nexttun.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 香港 02 · Anycast CDN
+  type: vless
+  server: hk02.edge.nexttun.net
+  port: 8443
+  uuid: 4c60d9cc-a237-48d9-aaad-83e89c2c3929
+  network: xhttp
+  tls: true
+  servername: hk02.edge.nexttun.net
+  client-fingerprint: chrome
+- name: 日本 01 · 东京高带宽
+  type: vless
+  server: tyo01.edge.nexttun.net
+  port: 443
+  uuid: 4c60d9cc-a237-48d9-aaad-83e89c2c3929
+  network: tcp
+  tls: true
+  servername: tyo01.edge.nexttun.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 新加坡 01 · 狮城低延迟
+  type: vless
+  server: sin01.edge.nexttun.net
+  port: 443
+  uuid: 4c60d9cc-a237-48d9-aaad-83e89c2c3929
+  network: tcp
+  tls: true
+  servername: sin01.edge.nexttun.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: 美国 01 · 硅谷原生解锁
+  type: vless
+  server: sjc01.edge.nexttun.net
+  port: 8443
+  uuid: 4c60d9cc-a237-48d9-aaad-83e89c2c3929
+  network: xhttp
+  tls: true
+  servername: sjc01.edge.nexttun.net
+  client-fingerprint: chrome
+- name: 德国 01 · 法兰克福节点
+  type: vless
+  server: fra01.edge.nexttun.net
+  port: 443
+  uuid: 4c60d9cc-a237-48d9-aaad-83e89c2c3929
+  network: tcp
+  tls: true
+  servername: fra01.edge.nexttun.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 香港 01 · 极速专线 BGP
+  - 香港 02 · Anycast CDN
+  - 日本 01 · 东京高带宽
+  - 新加坡 01 · 狮城低延迟
+  - 美国 01 · 硅谷原生解锁
+  - 德国 01 · 法兰克福节点
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 香港 01 · 极速专线 BGP
+  - 香港 02 · Anycast CDN
+  - 日本 01 · 东京高带宽
+  - 新加坡 01 · 狮城低延迟
+  - 美国 01 · 硅谷原生解锁
+  - 德国 01 · 法兰克福节点
+rules:
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择

@@ -1,0 +1,135 @@
+{
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "香港 01 · 极速专线 BGP",
+        "香港 02 · Anycast CDN",
+        "日本 01 · 东京高带宽",
+        "新加坡 01 · 狮城低延迟",
+        "美国 01 · 硅谷原生解锁",
+        "德国 01 · 法兰克福节点"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "香港 01 · 极速专线 BGP",
+        "香港 02 · Anycast CDN",
+        "日本 01 · 东京高带宽",
+        "新加坡 01 · 狮城低延迟",
+        "美国 01 · 硅谷原生解锁",
+        "德国 01 · 法兰克福节点"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "3m"
+    },
+    {
+      "type": "vless",
+      "tag": "香港 01 · 极速专线 BGP",
+      "server": "hk01.edge.nexttun.net",
+      "server_port": 443,
+      "uuid": "4c60d9cc-a237-48d9-aaad-83e89c2c3929",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk01.edge.nexttun.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "香港 02 · Anycast CDN",
+      "server": "hk02.edge.nexttun.net",
+      "server_port": 8443,
+      "uuid": "4c60d9cc-a237-48d9-aaad-83e89c2c3929",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk02.edge.nexttun.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "日本 01 · 东京高带宽",
+      "server": "tyo01.edge.nexttun.net",
+      "server_port": 443,
+      "uuid": "4c60d9cc-a237-48d9-aaad-83e89c2c3929",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tyo01.edge.nexttun.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "新加坡 01 · 狮城低延迟",
+      "server": "sin01.edge.nexttun.net",
+      "server_port": 443,
+      "uuid": "4c60d9cc-a237-48d9-aaad-83e89c2c3929",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sin01.edge.nexttun.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "美国 01 · 硅谷原生解锁",
+      "server": "sjc01.edge.nexttun.net",
+      "server_port": 8443,
+      "uuid": "4c60d9cc-a237-48d9-aaad-83e89c2c3929",
+      "flow": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "sjc01.edge.nexttun.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "德国 01 · 法兰克福节点",
+      "server": "fra01.edge.nexttun.net",
+      "server_port": 443,
+      "uuid": "4c60d9cc-a237-48d9-aaad-83e89c2c3929",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fra01.edge.nexttun.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

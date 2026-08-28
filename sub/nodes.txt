@@ -1,0 +1,6 @@
+vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@hk01.edge.nexttun.net:443?security=tls&sni=hk01.edge.nexttun.net&flow=xtls-rprx-vision#香港 01 · 极速专线 BGP
+vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@hk02.edge.nexttun.net:8443?security=tls&sni=hk02.edge.nexttun.net&type=xhttp#香港 02 · Anycast CDN
+vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@tyo01.edge.nexttun.net:443?security=tls&sni=tyo01.edge.nexttun.net&flow=xtls-rprx-vision#日本 01 · 东京高带宽
+vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@sin01.edge.nexttun.net:443?security=tls&sni=sin01.edge.nexttun.net&flow=xtls-rprx-vision#新加坡 01 · 狮城低延迟
+vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@sjc01.edge.nexttun.net:8443?security=tls&sni=sjc01.edge.nexttun.net&type=xhttp#美国 01 · 硅谷原生解锁
+vless://4c60d9cc-a237-48d9-aaad-83e89c2c3929@fra01.edge.nexttun.net:443?security=tls&sni=fra01.edge.nexttun.net&flow=xtls-rprx-vision#德国 01 · 法兰克福节点
